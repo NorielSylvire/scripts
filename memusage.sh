@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HELP="Usage: memusage [mode] [options]\n\nmemusage prints information about the current memory usage of the system.\n\nModes:\n\t\tnone\n\t\t\tPrint all the information.\n\t\t--used -u\n\t\t\tPrint the memory that is currently being used by the system.\n\t\t--unused -n\n\t\t\tPrint the memory not currently used by the system.\n\t\t--free -f\n\t\t\tPrint free memory.\n\t\t--total -t\n\t\t\tPrint the total memory of the system.\n\nOptions:\n\t\ŧ --brief -b\n\t\t\tPrint only the number of memory and not the words. Useful for embedding the information into other strings such as the command prompt.\n\t\ŧ--help -h\n\t\t\ŧPrint this message."
+HELP="Usage: memusage [mode] [options]\n\nmemusage prints information about the current memory usage of the system.\n\nModes:\n\t\tnone\n\t\t\tPrint all the information.\n\t\t--used -u\n\t\t\tPrint the memory that is currently being used by the system.\n\t\t--unused -n\n\t\t\tPrint the memory not currently used by the system.\n\t\t--free -f\n\t\t\tPrint free memory.\n\t\t--total -t\n\t\t\tPrint the total memory of the system.\n\nOptions:\n\t\t--brief -b\n\t\t\tPrint only the number of memory and not the words. Useful for embedding the information into other strings such as the command prompt.\n\t\t--help -h\n\t\t\tPrint this message."
 
 
 if [[ -n $1 ]] && ([[ $1 = "-b" ]] || [[ $1 = "--brief" ]]); then
